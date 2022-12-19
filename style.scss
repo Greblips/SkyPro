@@ -413,18 +413,17 @@
         gap: 10px;
         // pointer-events: none;
     }
-    .catalog__nav_link-item:first-of-type::after{
+    .catalog__nav_link ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+    .catalog__nav_link ul li:first-of-type::after{
+        content: '/';
         padding-left: 1rem;
-        content: "/";
-        pointer-events: none;
     }
-    .catalog__nav_link-item:hover{
+    .catalog__nav_link ul li a:hover{
         text-decoration: underline;
-    }
-    .catalog__nav_link-item:first-of-type:hover::after{
-        pointer-events: none;
-        text-decoration: double;
-
     }
     
     .link_box{
