@@ -174,7 +174,7 @@ body {
 }
 
 .for__item_1 {
-  
+  background-image: url(./img/Rectangle\ 17.jpg);
 }
 
 .for__item_2 {
@@ -193,16 +193,7 @@ body {
   background-image: url(./img/Rectangle\ 21.jpg);
   height: 415px;
 }
-.fo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-style: normal;
-  grid-column: span 12;
 
-  color: #FFFFFF;
-}
 .product-heading {
   margin-top: 2rem;
   margin-bottom: 2rem;
