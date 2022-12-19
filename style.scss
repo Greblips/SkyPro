@@ -46,11 +46,12 @@
         font-size: 2.25rem;
         font-weight: 600;
         color: #fff;
-        transition: color .3s;
+        transition: color .5s;
     }
     .header_logo:hover{
 
             color:#242325;
+            transition: color .5s;
     }
 
     .menu__link{
@@ -223,6 +224,7 @@
         max-width: 23.625rem;
         display: flex;
         flex-direction: column;
+        transition: transform .3s;
 
     }
     .product:hover{
@@ -312,8 +314,15 @@
         font-size: 2rem;
         line-height: 44px;
         color: #000;
+        transition: opasity .5s;
     
     }
+    .footer_logo:hover{
+        opacity: 0.8;
+        color:#000000;
+        transition: opasity .5s;
+}
+
     .footer__info{
         display: flex;
         gap: 129px;
@@ -333,26 +342,45 @@
         line-height: 29px;
         color: #000000;
     }
+
     .footer__link{
-        font-weight: 500;
-        font-size: 0.875rem;
-        line-height: 17px;
-        color: #888888;
-    
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        list-style: none;
     }
-    .footer__link:hover{
-        text-decoration-line: underline;
-    
+    .footer__link_item{
+        position: relative;
+        color: #888888; /*задаём цвет ссылки*/
+        cursor: pointer;
+        line-height: 1; /*задаём высоту строки*/
+        text-decoration: none
+        
+    }
+    .footer__link_item::after{
+        display: block;
+	    position: absolute;
+	    left: 50%; 
+	    width: 0;
+	    height: 2px;
+	    background-color: #888888; 
+	    content: "";
+	    transition: width 0.3s ease-out;
+    }
+    .footer__link_item:hover::after{
+        width: 100%;
+        transform: translateX(-50%);
     }
     .footer__icons{
         display: flex;
-       gap: 1rem;
+        gap: 1rem;
     }
-    .footer__icons a:hover{
-      border: 2px solid green;
+    .fill-good{
+        transition: fill .3s;
     }
-    
-    
+    .fill-good:hover{
+        fill: rgb(0, 0, 0);
+    }
     .footer_text{
         font-weight: 400;
         font-size: 12px;
@@ -395,14 +423,14 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        transition: color .3s;
-        transition: background .3s;
+        transition: color .5s;
+        transition: background .5s;
     }
     .footer__form_button:hover{
         background: #000000;
         color: #FFF;
-        transition: color .3s;
-        transition: background .3s;
+        transition: color .5s;
+        transition: background  .5s;
     
     }
     
